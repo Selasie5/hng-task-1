@@ -9,11 +9,11 @@ app.use(cors())
 const PORT = process.env.PORT || 3000;
 
 const currentDate = new Date();
-const ISOFormat = currentDate.toISOString();
+const ISOFormatDate = currentDate.toISOString();
 
 app.get("/api/v1", (req:Request, res:Response)=>
 {
-    res.json({email: "selasisepenu5@gmail.com",current_datetime: currentDate,github_url:"https://github.com/Selasie5/hng-task-1"})
+    res.json({email: "selasisepenu5@gmail.com",current_datetime: ISOFormatDate,github_url:"https://github.com/Selasie5/hng-task-1"})
 })
 
 app.listen(PORT, ()=>
