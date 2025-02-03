@@ -1,14 +1,21 @@
 # Stage O Backend - A Public API To Retrieve Basic Information
 
-This is a public API that display basic information and was built using  **Typescript**, **Node.js**, **Express**, 
+This public API is built using **Typescript**, **Node.js**, **Express** to display basic information.
 
----
+## 🌐 API Endpoint
 
-
-
+### Retrieve Basic Information
+- **Endpoint:** `GET https://hng-task-1-0pyj.onrender.com/api/v1`
+- **Response Format (200 OK):**
+  ```json
+  {
+    "email": "your-email@example.com",
+    "current_datetime": "2025-01-30T09:30:00Z",
+    "github_url": "https://github.com/yourusername/your-repo"
+  }
+  ```
 
 ## 📦 Installation
-
 To get started locally, follow these steps:
 
 1. **Clone the repository:**
@@ -22,10 +29,10 @@ To get started locally, follow these steps:
    npm install
    ```
 
-4. **Run the development server:**
+3. **Run the development server:**
    ```bash
    npm run start
    ```
 
-5. **Open your browser:**
+4. **Open your browser:**
    Visit `http://localhost:3000/api/v1` to view the application.
